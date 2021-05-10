@@ -1,0 +1,107 @@
+.heading
+{
+    font-size: 35px;
+    color:black;
+    font-style: italic;
+    padding-top: 5%;
+}
+.bar
+{
+    border: solid;
+    font-size: 25px;
+}
+
+.bgcolor
+{
+    background-color:beige;
+}
+.slider
+{
+    border:solid;
+    color:black;
+}
+  .login
+{
+    background-color: beige;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 150%;
+    font-family: fantasy;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: solid ;
+    border-width: thick;
+    
+
+    
+}
+       .nme 
+        {
+            color: black;
+            background-color: gainsboro; 
+               margin-left: 30%;
+    margin-right: 30%;
+            padding-left: 10%;
+    padding-right: 40%;
+           
+        }
+.header
+{
+    color:darkgoldenrod;
+       margin-left: 30%;
+    margin-right: 30%;
+            padding-left: 10%;
+    padding-right: 40%;
+           background-color: gainsboro;
+}
+.new
+{
+      background-color: gainsboro; 
+               margin-left: 30%;
+    margin-right: 30%;
+            padding-left: 10%;
+    padding-right: 40%;
+           font-size: 30px;
+}
+.signup
+{
+    background-color: beige;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:5%;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    border: solid;
+}
+li a:hover {
+  background-color: black;
+  color:green;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.prd
+{
+    padding-top: 100px;
+    padding-left: 30px;
+}
+

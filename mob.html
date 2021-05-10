@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function Check(){
+                
+              var num1=(f1.num1.value);
+                //alert(num1);
+                var len=num1.length;
+                if(len!=10)
+                    {
+                        document.getElementById('res').innerHTML="Mobile number not valid";
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1">
+            Mobile no:<input type="text" name="num1"><p id="res"></p>
+            <input type="button" onclick="Check()" value="click" >
+            
+        </form>
+        
+    </body>
+    <style>
+    p
+        {
+            color: red;
+        }
+        form{
+            position: inline;
+            
+        }
+    </style>
+</html>

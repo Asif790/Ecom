@@ -1,0 +1,59 @@
+<?php
+
+require_once('connect.php');
+$sql="select *from category";
+$result=mysqli_query($connect,$sql);
+?>
+
+<html>
+    <title>RentUs.com</title>
+    <Head><div class="heading" ><b><a href="homepage.html">RentUs.Com</a></b></div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="homedesign.css">
+     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      </Head>
+    <body>
+    <div class="bar">
+             <nav class="navbar navbar-expand-sm bgcolor justify-content-end">
+            <ul class="nav nav-tabs">
+                     <li class="nav-item">
+    <a class="nav-link" href="#">Notification</a>
+                </li>
+       <li class="nav-item">
+    <a class="nav-link" href="slogin.html">Logout</a>
+                </li>
+             </ul>
+            </nav></div>
+
+        <div class="login">
+          <form class="" action="pddb.php" method="post" enctype="multipart/form-data">
+            <label>Product Category:</label>
+            <select>
+                <option>
+                  <?php
+                  while($row=mysqli_fetch_assoc($result) )
+                  echo $row['categoryname']; ?>
+                </option>
+            </select>
+            <label>Product Description:</label>
+            <input type="text" name="pdis" maxlenth="100"  >
+            <label>Duration:</label>
+            <input type="number" name="duration">
+            <label>Price</label>
+            <input type="text" name="price" maxlenth="10"  >
+            <label>Product Image:</label>
+            <input type="file" name="imgupload" >
+            <input type="submit" value="Add product" name="submt">
+
+
+            </form>
+
+
+        </div>
+    </body>
+</html>

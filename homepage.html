@@ -1,0 +1,105 @@
+<html>
+    <title>RentUs.com</title>
+    <Head>
+        <script>
+            function addcart()
+            {
+                var ans= prompt(" Enter Your Address:");
+              /*  alert('<html><form>Address:<input type="text" name="custadd"></form></html>');*/
+            }
+        </script>
+        
+        
+        
+        
+        <div class="heading" ><b>RentUs.Com</b></div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="homedesign.css">
+     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script></Head>
+    <body>
+        <div class="bar">
+             <nav class="navbar navbar-expand-sm bgcolor justify-content-end">
+            <ul class="nav nav-tabs">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Categories</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="homepage.html">Home</a>
+      <a class="dropdown-item" href="#">cars</a>
+      <a class="dropdown-item" href="#">Bikes</a>
+        <a class="dropdown-item" href="#">Home Appliances</a>
+        <a class="dropdown-item" href="#">Apartment and Flats</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Login.html">Login/Signup</a>
+                </li>
+                <li class="nav-item">
+    <a class="nav-link" href="#">About Us</a>
+                </li>
+                
+            </ul>
+            </nav>
+        </div>
+        <div class="slider">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+ 
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="car.jpeg" alt="prd1">
+    </div>
+
+    <div class="item">
+      <img src="bike.jpg" alt="prd2">
+    </div>
+
+    <div class="item">
+      <img src="appli.jpg" alt="prd3">
+    </div>
+  </div>
+
+ 
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ 
+        
+</div>
+        <div class="prd">
+        <div class="grid">
+  <div class="row">
+    <div class="col"><img src="images2.jpeg" height="180px"><br>
+      <b>Price:10,000</b>
+      <input type="button" name="" value="Add to cart" onclick="addcart()">
+    </div>
+    <div class="col"><img src="index4.jpeg" height="180px"><br>
+      <b>Price:8,000</b>
+      <input type="button" name="" value="Add to cart" onclick="addcart()"></div>
+    <div class="col"><img src="index.jpeg" height="180px"><br>
+      <b>Price:5,000</b>
+      <input type="button" name="" value="Add to cart" onclick="addcart()"></div>
+          <div class="col"><img src="index1.jpeg" height="180px"><br>
+      <b>Price:5,000</b>
+      <input type="button" name="" value="Add to cart" onclick="addcart()"></div>
+</div>
+        </div>
+        </div>
+    
+    </body>
+   

@@ -1,0 +1,38 @@
+<html>
+    <title>signUp</title>
+    <div class="nme">
+        <br><br><center>
+        <h1><a href="homepage.html">RentUs.com</a></h1>
+        </center>
+    </div>
+     <head>
+         <script>
+             function cnfrm()
+             {
+                 var pwd=f1.pwd.value;
+                 var pwd1=f1.pwd1.value;
+                 if(pwd!=pwd1)
+                     {
+                         alert("Password and confirm password is not same");
+                     }
+
+             }
+         
+         </script>
+        <link rel="stylesheet" type="text/css" href="homedesign.css"></head>
+    <body>
+        <div class="signup">
+            <form  method="post" action="usignup.php" name="f1">
+                <h1><center>SignUp Page</center></h1><br>
+                First Name:<input type="text" placeholder="first Name" required="true" maxlength="20" name="fname"><br><br>
+                Last Name:<input type="text" placeholder="Last Name" required="true" maxlength="20" name="lname"><br><br>
+                Email:<input type="Email" placeholder="Email" required="true" name="email" ><br><br>
+                Password:<input type="Password" placeholder="(minimum length is six)" required="true" name="pwd"><br><br>
+                Confirm Password:<input type="password" placeholder="Enter same as above" required="true" name="pwd1" ><br><br>
+                Phone No:<input type="number" placeholder="Phone Number" required="true" maxlength="10" name="pno" onblur="cnfrm()"><br><br>
+                <input type="submit" value="signup" name="signupbtn">
+            </form>
+        </div>
+    </body>
+     <div class="new"><a href="Login.html">Already a User?Login</a></div>
+</html>
